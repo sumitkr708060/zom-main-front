@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-labelledby="title" role="img">
+  <title>Zomitron Logo</title>
+  <g fill="none" stroke="#111" stroke-width="24" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M92 150h60l32 180h206l28-132H204"/>
+    <path d="M218 354h176"/>
+    <circle cx="210" cy="392" r="30" fill="#111" stroke="#111"/>
+    <circle cx="356" cy="392" r="30" fill="#111" stroke="#111"/>
+  </g>
+  <g transform="translate(108 92)" fill="#111">
+    <path d="M54 216v-34l98-116H90V28h176v34l-102 122h104v32H54z"/>
+    <g transform="translate(200 72)">
+      <circle cx="52" cy="52" r="52" fill="#111"/>
+      <circle cx="52" cy="52" r="40" fill="none" stroke="#fff" stroke-width="7"/>
+      <path d="M10 52h84M52 10v84" stroke="#fff" stroke-width="7"/>
+      <path d="M20 30c10 7 20 9 32 9s22-2 32-9M20 74c10-7 20-9 32-9s22 2 32 9" stroke="#fff" stroke-width="5"/>
+    </g>
+  </g>
+</svg>

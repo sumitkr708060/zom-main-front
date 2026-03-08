@@ -1,0 +1,21 @@
+{
+    "name": "manifest",
+    "short_name": "Zomitron",
+    "description": "Hyperlocal Quick Commerce - Shop from vendors near you",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/favicon.jpg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "shopping",
+        "lifestyle"
+    ],
+    "lang": "en-IN"
+}
