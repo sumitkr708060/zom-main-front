@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { selectCurrentUser, selectIsAuthenticated } from './store/authSlice';
 import { useLocationDetection } from './hooks/useLocation';
@@ -44,6 +44,11 @@ const AdminVendorDetail = lazy(() => import('./pages/admin/AdminVendorDetail'));
 
 const NotFound = lazy(() => import('./pages/NotFound'));
 
+const RedirectToRoot = () => {
+    const location = useLocation();
+    return <Navigate to={{ pathname: '/', search: location.search }} replace />;
+};
+
 // Protected route components
 const ProtectedRoute = ({ children, roles }) => {
     const isAuthenticated = useSelector(selectIsAuthenticated);
@@ -67,8 +72,8 @@ export default function App() {
             <Routes>
                 {/* Public routes with main layout */}
                 <Route element={<Layout />}>
-                    <Route path="/" element={<Navigate to="/shop" replace />} />
-                    <Route path="/shop" element={<Shop />} />
+                    <Route path="/" element={<Shop />} />
+                    <Route path="/shop" element={<RedirectToRoot />} />
                     <Route path="/shop/:category" element={<Shop />} />
                     <Route path="/product/:id" element={<ProductDetail />} />
                     <Route path="/cart" element={<Cart />} />

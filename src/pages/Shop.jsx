@@ -169,7 +169,7 @@ export default function Shop() {
             const query = sp.toString();
             navigate(
                 {
-                    pathname: value ? `/shop/${value}` : '/shop',
+                    pathname: value ? `/shop/${value}` : '/',
                     search: query ? `?${query}` : '',
                 },
                 { replace: true }

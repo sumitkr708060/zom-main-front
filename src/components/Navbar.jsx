@@ -63,7 +63,7 @@ export default function Navbar() {
                 <div className="border-b border-gray-100">
                     <div className="page-container flex items-center justify-between h-16 gap-3">
                         {/* Logo + brand */}
-                        <Link to="/shop" className="flex items-center gap-2 flex-shrink-0">
+                        <Link to="/" className="flex items-center gap-2 flex-shrink-0">
                             <img src="/logo.svg" alt="Zomitron" className="h-10 w-auto" />
                             <span className="font-black text-xl text-gray-900 block sm:block">ZOMITRON</span>
                         </Link>
